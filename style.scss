@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    box-sizing: 0;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(19, 89, 121, 0.384);
+}
+.btn{
+    background-color: palevioletred;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+}
+.delbtn{
+    border: none;
+    margin-top: 10px;
+}
+
+.Form{
+    padding: 10px;
+    background-color: rgba(1, 15, 22, 0.404);
+    color: white;
+    text-align: center;
+    input , select{
+        margin: 5px;
+        border: 2px solid rgb(0, 174, 255);
+        border-radius: 4px;
+        font-size: 1.1rem;
+      }
+      label{
+        font-size: 1.1rem;
+        font-weight: bold;
+    
+      }
+}
+.AllProductsDiv{
+    h1{
+        margin-top: 10px;
+        text-decoration: underline;
+        text-decoration-color: whitesmoke;
+        width: 100%;
+                
+    }
+    h1:hover{
+        text-decoration-style: double;
+    }
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ProductDiv{
+    background-color: rgba(255, 235, 205, 0.747);
+    word-wrap: break-word;
+    overflow-y: hidden;
+    margin: 5px;
+    width: 15vw;
+    height: 40vh;
+    border: 1px black solid;
+    img{
+        width: 100%;
+        height: 50%;
+    }
+}
+.ProductDiv:hover{
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 0;
+  }

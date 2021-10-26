@@ -1,0 +1,48 @@
+<!-- Task 1------------------------------
+---------Michal Hazan---------------------
+----------------26/10/21----------------- -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Form">
+        <h1>Add Product</h1>
+
+        <label>Name</label>
+        <input type="text" placeholder="Enter product name" id="Pname" required>
+
+        <label>Price</label>
+        <input type="number" placeholder="Enter product price" id="Pprice" required>
+        <label>Choose catagory:</label>
+
+        <select name="catagory" id="Pcatagory">
+            <option value="Drinks">Drinks</option>
+            <option value="Meat">Meat</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Basic">Basic</option>
+        </select>
+
+        <label>Picture</label>
+        <input type="text" placeholder="Enter product Picture" id="Ppic" required>
+
+        <button class="AddProduct btn">Add</button>
+    </div>
+    <div class="AllProductsDiv">
+        <h1>My Cart</h1>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
