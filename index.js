@@ -7,7 +7,7 @@ const Ppic = document.querySelector('#Ppic') //האינפוט שמכיל את ת
 Pcatagory.value = "" //נתחיל עם זה שלא יופיע קטגוריה בבחירת המוצר כך שהמשתמש יחלץ ואז יראה מהן הקטגרויות
 
 //----יצירת אובייקט מערך מוצרים----
-const Parr = [];
+let Parr = [];
 
 //לחיצת הכפתור דרכו מוסיפים מוצרים
 AddProductBtn.addEventListener('click', function (e) {
@@ -32,9 +32,20 @@ AddProductBtn.addEventListener('click', function (e) {
         delbtn.textContent = "Remove Product"
         delbtn.className = "delbtn"
         delbtn.addEventListener('click', function (ev) {
+            //-------מחיקה מהמערך----
+            let PD = ev.target.parentElement.querySelector("h2").textContent
+            for (let i = 0; i < Parr.length; i++) {
+
+                if (Parr[i].ProName == PD) {
+                    Parr.splice(i, 1)
+                }
+
+            }
+            //-----מחיקה מהתצוגה-----
             ev.target.parentElement.remove()
         })
         //----------------------------------------
+        //------------הכנסת נתונים ואימוץ--------------
 
         ProductName.textContent = Pname.value
         ProductPrice.textContent = Pprice.value + "$"
